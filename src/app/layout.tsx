@@ -17,10 +17,10 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Visakha Elite School | Shaping Leaders, Inspiring Minds",
-  description: "Visakha Elite School is a premier educational institution providing world-class facilities, holistic curriculum, smart classrooms, robotics labs, and comprehensive sports facilities.",
+  title: "VDA Elite School | Shaping Leaders, Inspiring Minds",
+  description: "VDA Elite School is a premier educational institution providing world-class facilities, holistic curriculum, smart classrooms, robotics labs, and comprehensive sports facilities.",
   keywords: ["school", "elite school", "visakhapatnam", "robotics", "smart classrooms", "admissions 2026", "education"],
-  authors: [{ name: "Visakha Elite School" }],
+  authors: [{ name: "VDA Elite School" }],
 };
 
 export default function RootLayout({

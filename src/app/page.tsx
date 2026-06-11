@@ -24,7 +24,7 @@ export default function HomePage() {
       badgeText: "Admissions 2026-27 Open",
       badgeType: "coral" as const,
       title: "Inspiring Academic Excellence",
-      description: "Welcome to Visakha Elite School, where we nurture tomorrow's leaders through state-of-the-art infrastructure, value-based learning, and global standards.",
+      description: "Welcome to VDA Elite School, where we nurture tomorrow's leaders through state-of-the-art infrastructure, value-based learning, and global standards.",
       primaryCtaText: "Apply Online",
       primaryCtaLink: "/admissions",
       secondaryCtaText: "Explore Campus",
@@ -93,14 +93,14 @@ export default function HomePage() {
                 "Guiding Minds, Shaping Honorable Futures"
               </h2>
               <p style={{ marginBottom: "1.2rem" }}>
-                Welcome to Visakha Elite School. Our mission is to foster a safe, premium learning atmosphere where children are stimulated to think independently, innovate responsibly, and excel academically.
+                Welcome to VDA Elite School. Our mission is to foster a safe, premium learning atmosphere where children are stimulated to think independently, innovate responsibly, and excel academically.
               </p>
               <p style={{ marginBottom: "1.8rem", fontStyle: "italic" }}>
                 "We believe that every child is unique. Our curated educational pathways allow students to discover their passions, whether in robotics laboratories, athletic stadiums, or music chambers."
               </p>
               <div>
                 <h4 style={{ color: "var(--color-primary)", fontWeight: 700 }}>Dr. Ananya S. Rao</h4>
-                <p style={{ fontSize: "0.85rem" }}>Principal, Visakha Elite School</p>
+                <p style={{ fontSize: "0.85rem" }}>Principal, VDA Elite School</p>
               </div>
             </div>
             
@@ -229,7 +229,7 @@ export default function HomePage() {
               <img src="/images/hero_classroom.png" alt="Smart learning" style={{ width: "100%", height: "200px", objectFit: "cover" }} />
               <div style={{ padding: "2rem" }}>
                 <span style={{ fontSize: "0.8rem", color: "var(--color-secondary)", fontWeight: 700 }}>May 28, 2026</span>
-                <h3 style={{ fontSize: "1.25rem", margin: "0.5rem 0 1rem 0" }}>Visakha Elite Unveils Virtual Reality Lab</h3>
+                <h3 style={{ fontSize: "1.25rem", margin: "0.5rem 0 1rem 0" }}>VDA Elite Unveils Virtual Reality Lab</h3>
                 <p style={{ fontSize: "0.9rem", marginBottom: "1rem" }}>A major upgrade to our digital infrastructure, introducing stereoscopic headsets for immersive biology and geography.</p>
                 <Link href="/student-life" style={{ fontWeight: 600, display: "flex", alignItems: "center", gap: "0.25rem", color: "var(--color-primary)" }}>
                   <span>Read Story</span> <ArrowRight size={14} />

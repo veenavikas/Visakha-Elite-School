@@ -33,7 +33,7 @@ export default function AdmissionsPage() {
       answer: "A child must be 3 years of age as of March 31st of the academic year in which admission is sought. For Grade 1, the minimum age requirement is 6 years.",
     },
     {
-      question: "What is the student-to-teacher ratio at Visakha Elite?",
+      question: "What is the student-to-teacher ratio at VDA Elite?",
       answer: "We maintain a luxury ratio of 10:1 overall, and sections are strictly limited to an average of 20 students to guarantee tailored mentoring and individual attention.",
     },
     {
@@ -42,7 +42,7 @@ export default function AdmissionsPage() {
     },
     {
       question: "What board curriculum is followed?",
-      answer: "Visakha Elite School is affiliated with the Central Board of Secondary Education (CBSE), New Delhi. Our curriculum is enriched with international STEM (Science, Technology, Engineering, Math) modules and coding.",
+      answer: "VDA Elite School is affiliated with the Central Board of Secondary Education (CBSE), New Delhi. Our curriculum is enriched with international STEM (Science, Technology, Engineering, Math) modules and coding.",
     },
     {
       question: "Are extracurricular programs mandatory?",

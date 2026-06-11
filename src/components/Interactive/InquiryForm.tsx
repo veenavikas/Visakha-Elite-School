@@ -182,7 +182,7 @@ export default function InquiryForm() {
                 Further Details
               </h3>
               <div className={styles.group}>
-                <label className={styles.label}>How did you hear about Visakha Elite School?</label>
+                <label className={styles.label}>How did you hear about VDA Elite School?</label>
                 <select
                   value={source}
                   onChange={(e) => setSource(e.target.value)}
@@ -240,7 +240,7 @@ export default function InquiryForm() {
           </div>
           <h2 className={styles.successTitle}>Inquiry Submitted!</h2>
           <p className={styles.successText}>
-            Thank you for expressing interest in **Visakha Elite School**. Our admissions officer will review the details and contact you at <strong>{phone}</strong> or <strong>{email}</strong> within the next 24 working hours.
+            Thank you for expressing interest in **VDA Elite School**. Our admissions officer will review the details and contact you at <strong>{phone}</strong> or <strong>{email}</strong> within the next 24 working hours.
           </p>
           <button 
             type="button" 

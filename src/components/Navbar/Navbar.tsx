@@ -61,7 +61,7 @@ export default function Navbar() {
                 <GraduationCap size={36} strokeWidth={1.5} />
               </div>
               <div className={styles.logoText}>
-                <span>VISAKHA ELITE</span>
+                <span>VDA ELITE</span>
                 <span className={styles.logoSub}>School of Excellence</span>
               </div>
             </Link>
@@ -128,7 +128,7 @@ export default function Navbar() {
             <GraduationCap size={40} strokeWidth={1.5} />
           </div>
           <div className={styles.logoText}>
-            <span>VISAKHA ELITE</span>
+            <span>VDA ELITE</span>
             <span className={styles.logoSub}>School of Excellence</span>
           </div>
         </Link>

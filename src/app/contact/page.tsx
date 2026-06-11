@@ -233,7 +233,7 @@ export default function ContactPage() {
         }}>
           <div className="glass-card" style={{ textAlign: "center", maxWidth: "350px", border: "2px solid var(--color-secondary)" }}>
             <MapPin size={24} style={{ color: "var(--color-secondary)", marginBottom: "0.5rem" }} />
-            <h3 style={{ fontSize: "1.1rem", marginBottom: "0.25rem" }}>Visakha Elite School</h3>
+            <h3 style={{ fontSize: "1.1rem", marginBottom: "0.25rem" }}>VDA Elite School</h3>
             <p style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Ocean View Campus, Beach Road, Vizag</p>
             <a 
               href="https://maps.google.com" 

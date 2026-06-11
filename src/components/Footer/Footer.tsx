@@ -15,7 +15,7 @@ export default function Footer() {
                 <GraduationCap size={32} strokeWidth={1.5} />
               </div>
               <div className={styles.logoText}>
-                <span>VISAKHA ELITE</span>
+                <span>VDA ELITE</span>
                 <span className={styles.logoSub}>School of Excellence</span>
               </div>
             </Link>
@@ -107,7 +107,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className={styles.bottomBar}>
-          <span>© 2026 Visakha Elite School. All rights reserved.</span>
+          <span>© 2026 VDA Elite School. All rights reserved.</span>
           <div className={styles.bottomLinks}>
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms & Conditions</a>

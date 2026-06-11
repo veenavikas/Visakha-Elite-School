@@ -6,7 +6,7 @@ export default function AboutPage() {
     {
       name: "Smt. Rukmini Devi",
       role: "Chairperson & Founder",
-      desc: "An eminent educationist with over three decades of experience, Smt. Rukmini Devi envisioned Visakha Elite School as a sanctuary for intellectual exploration and luxury values.",
+      desc: "An eminent educationist with over three decades of experience, Smt. Rukmini Devi envisioned VDA Elite School as a sanctuary for intellectual exploration and luxury values.",
       image: "/images/hero_classroom.png", // reusing image as placeholder representation
     },
     {
@@ -24,7 +24,7 @@ export default function AboutPage() {
   ];
 
   const milestones = [
-    { year: "2018", title: "Foundation Laid", desc: "Visakha Elite School was established on a 5-acre ocean-front campus with a goal to deliver premium learning pathways." },
+    { year: "2018", title: "Foundation Laid", desc: "VDA Elite School was established on a 5-acre ocean-front campus with a goal to deliver premium learning pathways." },
     { year: "2020", title: "CBSE & Global Affiliation", desc: "Received full CBSE affiliation with top ratings in infrastructure and curriculum design." },
     { year: "2022", title: "STEM & Robotics Launch", desc: "Partnered with premier technology institutes to install state-of-the-art electronics and coding laboratories." },
     { year: "2024", title: "Athletic Expansion", desc: "Inaugurated the semi-olympic size pool, basketball arenas, and horse-riding ring." },
@@ -114,7 +114,7 @@ export default function AboutPage() {
           <div style={{ textAlign: "center", maxWidth: "600px", margin: "0 auto 4rem auto" }}>
             <span className="badge badge-gold" style={{ marginBottom: "1rem" }}>Academic Leaders</span>
             <h2 style={{ fontSize: "2.5rem", fontFamily: "var(--font-playfair)", marginBottom: "1rem" }}>Our Leadership Team</h2>
-            <p>Meet the visionary minds driving the academic and strategic growth of Visakha Elite.</p>
+            <p>Meet the visionary minds driving the academic and strategic growth of VDA Elite.</p>
           </div>
 
           <div className="grid-3">
