@@ -59,11 +59,31 @@ export default function StudentLifePage() {
   const galleryCategories = ["All", "Campus", "STEM", "Sports", "Arts", "Academics"];
 
   const galleryItems = [
-    { id: 1, src: "/images/hero_campus.png", title: "Luxury School Campus", category: "Campus" },
-    { id: 2, src: "/images/hero_classroom.png", title: "Smart Science Classroom", category: "Academics" },
-    { id: 3, src: "/images/hero_robotics.png", title: "Advanced Robotics Lab", category: "STEM" },
-    { id: 4, src: "/images/gallery_sports.png", title: "Wood-floored Basketball Arena", category: "Sports" },
-    { id: 5, src: "/images/gallery_music.png", title: "Orchestra & Music Chamber", category: "Arts" },
+    { id: 1, src: "/images/school_image_1.jpeg", title: "Campus Exploration", category: "Campus" },
+    { id: 2, src: "/images/school_image_2.jpeg", title: "Interactive Learning", category: "Academics" },
+    { id: 3, src: "/images/school_image_3.jpeg", title: "Science Experiment", category: "STEM" },
+    { id: 4, src: "/images/school_image_4.jpeg", title: "Athletic Meet", category: "Sports" },
+    { id: 5, src: "/images/school_image_5.jpeg", title: "Cultural Performance", category: "Arts" },
+    { id: 6, src: "/images/school_image_6.jpeg", title: "Library Study", category: "Academics" },
+    { id: 7, src: "/images/school_image_7.jpeg", title: "Robotics Workshop", category: "STEM" },
+    { id: 8, src: "/images/school_image_8.jpeg", title: "Basketball Court", category: "Sports" },
+    { id: 9, src: "/images/school_image_9.jpeg", title: "Music Practice", category: "Arts" },
+    { id: 10, src: "/images/school_image_10.jpeg", title: "Campus View", category: "Campus" },
+    { id: 11, src: "/images/school_image_11.jpeg", title: "Math Olympiad", category: "Academics" },
+    { id: 12, src: "/images/school_image_12.jpeg", title: "Coding Session", category: "STEM" },
+    { id: 13, src: "/images/school_image_13.jpeg", title: "Tennis Match", category: "Sports" },
+    { id: 14, src: "/images/school_image_14.jpeg", title: "Art Exhibition", category: "Arts" },
+    { id: 15, src: "/images/school_image_15.jpeg", title: "Outdoor Assembly", category: "Campus" },
+    { id: 16, src: "/images/school_image_16.jpeg", title: "Classroom Discussion", category: "Academics" },
+    { id: 17, src: "/images/school_image_17.jpeg", title: "Chemistry Lab", category: "STEM" },
+    { id: 18, src: "/images/school_image_18.jpeg", title: "Swimming Pool", category: "Sports" },
+    { id: 19, src: "/images/school_image_19.jpeg", title: "Drama Rehearsal", category: "Arts" },
+    { id: 20, src: "/images/school_image_20.jpeg", title: "School Grounds", category: "Campus" },
+    { id: 21, src: "/images/school_image_21.jpeg", title: "Study Hall", category: "Academics" },
+    { id: 22, src: "/images/school_image_22.jpeg", title: "Physics Demo", category: "STEM" },
+    { id: 23, src: "/images/school_image_23.jpeg", title: "Football Field", category: "Sports" },
+    { id: 24, src: "/images/school_image_24.jpeg", title: "Pottery Class", category: "Arts" },
+    { id: 25, src: "/images/school_image_25.jpeg", title: "Main Entrance", category: "Campus" },
   ];
 
   const filteredItems = activeFilter === "All" 

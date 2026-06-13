@@ -6,7 +6,8 @@ import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import styles from "./Carousel.module.css";
 
 interface Slide {
-  image: string;
+  image?: string;
+  video?: string;
   badgeText: string;
   badgeType: "gold" | "coral" | "mint";
   title: string;
@@ -55,13 +56,24 @@ export default function Carousel({ slides }: CarouselProps) {
             className={`${styles.slide} ${isActive ? styles.slideActive : ""}`}
           >
             <div className={styles.imageContainer}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className={styles.image}
-                loading={index === 0 ? "eager" : "lazy"}
-              />
+              {slide.video ? (
+                <video
+                  src={slide.video}
+                  className={styles.image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              ) : (
+                /* eslint-disable-next-line @next/next/no-img-element */
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className={styles.image}
+                  loading={index === 0 ? "eager" : "lazy"}
+                />
+              )}
               <div className={styles.overlay} />
             </div>
 

@@ -31,7 +31,7 @@ export default function AcademicsPage() {
       title: "High School (Grade 9 - Grade 10)",
       badge: "Success Years",
       badgeType: "coral",
-      desc: "Provides strict academic preparation following the CBSE curriculum. High School is focused on deep subject mastery, competitive-exam foundation layouts, robotics certifications, and university prep guidance.",
+      desc: "Provides strict academic preparation following the CBSE curriculum. High School is focused on deep subject mastery, competitive-exam foundation layouts (with special emphasis on IIT foundation), robotics certifications, and university prep guidance.",
       features: [
         "CBSE aligned Board curriculum",
         "Advanced physics, chemistry & bio labs",
@@ -45,17 +45,17 @@ export default function AcademicsPage() {
     {
       title: "Collaborative Smart Classrooms",
       desc: "Every room is equipped with dual-touch smart screens, projection systems, and flexible seating, creating a space for interactive discussions and digital lectures.",
-      image: "/images/hero_classroom.png",
+      image: "/images/school_image_1.jpeg",
     },
     {
       title: "STEM & Robotics Innovation Lab",
       desc: "A creative workshop designed for electrical circuits, drone-programming, 3D printing, and Arduino microcontrollers under tech instructors.",
-      image: "/images/hero_robotics.png",
+      image: "/images/school_image_2.jpeg",
     },
     {
       title: "Semi-Olympic Swimming Pool & Arena",
       desc: "Featuring a state-of-the-art indoor pool, tennis courts, grass football pitches, and indoor badminton courts with professional coaches.",
-      image: "/images/hero_campus.png",
+      image: "/images/school_image_3.jpeg",
     },
   ];
 

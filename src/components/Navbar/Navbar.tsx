@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { GraduationCap, Search, Menu, X, Globe, ArrowRight } from "lucide-react";
 import styles from "./Navbar.module.css";
@@ -42,27 +43,17 @@ export default function Navbar() {
     <>
       <header className={`${styles.header} ${isScrolled ? styles.headerScrolled : ""}`}>
         <div className="container">
-          {/* Top Bar for portal links - hidden on scroll */}
-          <div className={styles.topBar}>
-            <Link href="#parents" className={styles.topLink}>Parents Portal</Link>
-            <Link href="#students" className={styles.topLink}>Students Portal</Link>
-            <Link href="#staff" className={styles.topLink}>Staff Portal</Link>
-            <span style={{ color: "rgba(10, 37, 64, 0.2)" }}>|</span>
-            <div style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}>
-              <Globe size={14} />
-              <span className={styles.topLink} style={{ cursor: "pointer" }}>English / Trans</span>
-            </div>
-          </div>
+
 
           <div className={styles.navContainer}>
             {/* Logo */}
             <Link href="/" className={styles.logo}>
               <div className={styles.logoIcon}>
-                <GraduationCap size={36} strokeWidth={1.5} />
+                <img src="/images/logo.jpeg" alt="VDA Elite School Logo" style={{ height: "8vh", width: "auto", borderRadius: "50%", objectFit: "cover" }} />
               </div>
               <div className={styles.logoText}>
-                <span>VDA ELITE</span>
-                <span className={styles.logoSub}>School of Excellence</span>
+                <span>VDA Elite</span>
+                <span className={styles.logoSub}>School</span>
               </div>
             </Link>
 
@@ -125,11 +116,11 @@ export default function Navbar() {
 
         <Link href="/" className={styles.logo} style={{ marginBottom: "2rem" }}>
           <div className={styles.logoIcon}>
-            <GraduationCap size={40} strokeWidth={1.5} />
+            <img src="/images/logo.jpeg" alt="VDA Elite School Logo" style={{ height: "6vh", width: "auto", borderRadius: "50%", objectFit: "cover" }} />
           </div>
           <div className={styles.logoText}>
-            <span>VDA ELITE</span>
-            <span className={styles.logoSub}>School of Excellence</span>
+            <span>VDA Elite</span>
+            <span className={styles.logoSub}>School</span>
           </div>
         </Link>
 

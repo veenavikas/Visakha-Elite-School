@@ -51,7 +51,7 @@ export default function ContactPage() {
                   <div>
                     <h3 style={{ fontSize: "1.1rem", marginBottom: "0.25rem" }}>Address</h3>
                     <p style={{ fontSize: "0.95rem", color: "var(--text-muted)" }}>
-                      Ocean View Campus, Beach Road, Visakhapatnam, Andhra Pradesh, 530003, India
+                      D.No: 10-7-97, Main Road, opposite Babu Textiles, Kailash Nagar, New Gajuwaka, Visakhapatnam, Andhra Pradesh 530026
                     </p>
                   </div>
                 </div>
@@ -63,8 +63,8 @@ export default function ContactPage() {
                   <div>
                     <h3 style={{ fontSize: "1.1rem", marginBottom: "0.25rem" }}>Phone Lines</h3>
                     <p style={{ fontSize: "0.95rem", color: "var(--text-muted)" }}>
-                      Main: +91 891 234 5678<br />
-                      Admissions Desk: +91 891 234 5679
+                      Main: +91 9848677745<br />
+                      Admissions Desk: +91 9848577745
                     </p>
                   </div>
                 </div>
@@ -87,10 +87,10 @@ export default function ContactPage() {
                     <Clock size={22} />
                   </div>
                   <div>
-                    <h3 style={{ fontSize: "1.1rem", marginBottom: "0.25rem" }}>Office Hours</h3>
+                    <h3 style={{ fontSize: "1.1rem", marginBottom: "0.25rem" }}>Timings</h3>
                     <p style={{ fontSize: "0.95rem", color: "var(--text-muted)" }}>
-                      Monday - Friday: 8:30 AM - 4:30 PM<br />
-                      Saturday: 9:00 AM - 1:00 PM<br />
+                      Campus Visit: Mon - Sat, 9:00 AM - 4:00 PM<br />
+                      School Timings: Mon - Sat, 9:00 AM - 5:00 PM<br />
                       Sunday: Closed
                     </p>
                   </div>
@@ -234,7 +234,8 @@ export default function ContactPage() {
           <div className="glass-card" style={{ textAlign: "center", maxWidth: "350px", border: "2px solid var(--color-secondary)" }}>
             <MapPin size={24} style={{ color: "var(--color-secondary)", marginBottom: "0.5rem" }} />
             <h3 style={{ fontSize: "1.1rem", marginBottom: "0.25rem" }}>VDA Elite School</h3>
-            <p style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Ocean View Campus, Beach Road, Vizag</p>
+            <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginBottom: "0.5rem" }}>New Gajuwaka, Visakhapatnam</p>
+            <p style={{ fontSize: "0.75rem", color: "var(--text-muted)", fontStyle: "italic" }}>(Approx. 42-minute drive from Pendurthi)</p>
             <a 
               href="https://maps.google.com" 
               target="_blank" 

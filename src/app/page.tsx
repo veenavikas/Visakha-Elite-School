@@ -20,7 +20,7 @@ import {
 export default function HomePage() {
   const heroSlides = [
     {
-      image: "/images/hero_campus.png",
+      video: "/images/hero_video.mp4",
       badgeText: "Admissions 2026-27 Open",
       badgeType: "coral" as const,
       title: "Inspiring Academic Excellence",
@@ -31,7 +31,7 @@ export default function HomePage() {
       secondaryCtaLink: "/about",
     },
     {
-      image: "/images/hero_classroom.png",
+      image: "/images/school_image_1.jpeg",
       badgeText: "Next-Gen Classrooms",
       badgeType: "gold" as const,
       title: "World Class Architecture",
@@ -42,7 +42,7 @@ export default function HomePage() {
       secondaryCtaLink: "/admissions#faq",
     },
     {
-      image: "/images/hero_robotics.png",
+      image: "/images/school_image_2.jpeg",
       badgeText: "STEM & Innovation",
       badgeType: "mint" as const,
       title: "Nurturing Practical Thinkers",
@@ -88,7 +88,7 @@ export default function HomePage() {
         <div className="container">
           <div className="grid-2" style={{ alignItems: "center" }}>
             <div className="glass-card" style={{ padding: "3rem", borderLeft: "5px solid var(--color-secondary)" }}>
-              <span className="badge badge-gold" style={{ marginBottom: "1rem" }}>Message from the Principal</span>
+              <span className="badge badge-gold" style={{ marginBottom: "1rem" }}>Message from the Managing Director</span>
               <h2 style={{ fontSize: "2.5rem", marginBottom: "1.5rem", fontFamily: "var(--font-playfair)" }}>
                 "Guiding Minds, Shaping Honorable Futures"
               </h2>
@@ -99,15 +99,15 @@ export default function HomePage() {
                 "We believe that every child is unique. Our curated educational pathways allow students to discover their passions, whether in robotics laboratories, athletic stadiums, or music chambers."
               </p>
               <div>
-                <h4 style={{ color: "var(--color-primary)", fontWeight: 700 }}>Dr. Ananya S. Rao</h4>
-                <p style={{ fontSize: "0.85rem" }}>Principal, VDA Elite School</p>
+                <h4 style={{ color: "var(--color-primary)", fontWeight: 700 }}>D.S.S. Krishna Kumar (M.Sc)</h4>
+                <p style={{ fontSize: "0.85rem" }}>Founder & Managing Director, VDA Elite School</p>
               </div>
             </div>
             
             <div style={{ position: "relative", height: "100%", minHeight: "400px" }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
-                src="/images/hero_classroom.png" 
+                src="/images/school_image_1.jpeg" 
                 alt="Principal greeting parents"
                 style={{ width: "100%", height: "450px", objectFit: "cover", borderRadius: "20px", boxShadow: "0 10px 30px rgba(10, 37, 64, 0.08)" }}
               />
@@ -213,7 +213,7 @@ export default function HomePage() {
           <div className="grid-3">
             <div className="glass-card" style={{ padding: "0", overflow: "hidden" }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/hero_robotics.png" alt="Robotics exhibition" style={{ width: "100%", height: "200px", objectFit: "cover" }} />
+              <img src="/images/school_image_2.jpeg" alt="Robotics exhibition" style={{ width: "100%", height: "200px", objectFit: "cover" }} />
               <div style={{ padding: "2rem" }}>
                 <span style={{ fontSize: "0.8rem", color: "var(--color-secondary)", fontWeight: 700 }}>June 8, 2026</span>
                 <h3 style={{ fontSize: "1.25rem", margin: "0.5rem 0 1rem 0" }}>Annual STEM & Robotics Exhibition 2026</h3>
@@ -226,7 +226,7 @@ export default function HomePage() {
 
             <div className="glass-card" style={{ padding: "0", overflow: "hidden" }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/hero_classroom.png" alt="Smart learning" style={{ width: "100%", height: "200px", objectFit: "cover" }} />
+              <img src="/images/school_image_1.jpeg" alt="Smart learning" style={{ width: "100%", height: "200px", objectFit: "cover" }} />
               <div style={{ padding: "2rem" }}>
                 <span style={{ fontSize: "0.8rem", color: "var(--color-secondary)", fontWeight: 700 }}>May 28, 2026</span>
                 <h3 style={{ fontSize: "1.25rem", margin: "0.5rem 0 1rem 0" }}>VDA Elite Unveils Virtual Reality Lab</h3>
@@ -239,7 +239,7 @@ export default function HomePage() {
 
             <div className="glass-card" style={{ padding: "0", overflow: "hidden" }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/hero_campus.png" alt="Campus environment" style={{ width: "100%", height: "200px", objectFit: "cover" }} />
+              <img src="/images/school_image_3.jpeg" alt="Campus environment" style={{ width: "100%", height: "200px", objectFit: "cover" }} />
               <div style={{ padding: "2rem" }}>
                 <span style={{ fontSize: "0.8rem", color: "var(--color-secondary)", fontWeight: 700 }}>May 15, 2026</span>
                 <h3 style={{ fontSize: "1.25rem", margin: "0.5rem 0 1rem 0" }}>Ecology Club wins Eco-School Green Shield</h3>

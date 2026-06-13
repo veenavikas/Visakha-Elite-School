@@ -17,8 +17,8 @@ export default function AdmissionsPage() {
     },
     {
       num: "03",
-      title: "Document Submission",
-      desc: "Upload or submit birth certificate, previous school reports, transfer certificates, and passport photos.",
+      title: "Document Submission & Evaluation",
+      desc: "Submit your child's Aadhaar card, birth certificate, and previous report cards for the spot-admission assessment.",
     },
     {
       num: "04",
@@ -42,11 +42,15 @@ export default function AdmissionsPage() {
     },
     {
       question: "What board curriculum is followed?",
-      answer: "VDA Elite School is affiliated with the Central Board of Secondary Education (CBSE), New Delhi. Our curriculum is enriched with international STEM (Science, Technology, Engineering, Math) modules and coding.",
+      answer: "VDA Elite School is affiliated with the Central Board of Secondary Education (CBSE), New Delhi. Our curriculum is enriched with a special emphasis on IIT foundation, international STEM (Science, Technology, Engineering, Math) modules and coding.",
     },
     {
       question: "Are extracurricular programs mandatory?",
       answer: "Yes. Holistic development is central to our ethos. Every student participates in one sport (e.g., swimming, tennis, basketball) and one creative/performing art (e.g., coding, music, pottery, dance) as part of the daily timetable.",
+    },
+    {
+      question: "Are there any promotional discounts available?",
+      answer: "We are currently offering a 10% admission fee discount and a free transport allowance for students living within a 2 km radius. Please confirm these details with our front desk.",
     },
   ];
 

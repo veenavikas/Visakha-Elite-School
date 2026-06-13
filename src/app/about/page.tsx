@@ -4,22 +4,16 @@ import { Award, Compass, Eye, Shield, Users } from "lucide-react";
 export default function AboutPage() {
   const leaders = [
     {
-      name: "Smt. Rukmini Devi",
-      role: "Chairperson & Founder",
-      desc: "An eminent educationist with over three decades of experience, Smt. Rukmini Devi envisioned VDA Elite School as a sanctuary for intellectual exploration and luxury values.",
-      image: "/images/hero_classroom.png", // reusing image as placeholder representation
-    },
-    {
-      name: "Dr. Ananya S. Rao",
-      role: "Principal",
-      desc: "Dr. Rao holds a Ph.D. in Child Psychology and Education. Her modern methodology blends standard curriculum with active, practical STEM and arts integration.",
-      image: "/images/hero_classroom.png",
+      name: "D.S.S. Krishna Kumar (M.Sc)",
+      role: "Founder & Managing Director",
+      desc: "Establishing Visakha Defence Academy in 2002, D.S.S. Krishna Kumar envisioned VDA Elite School as a premier extension of academic excellence, focusing on discipline and holistic growth.",
+      image: "/images/school_image_1.jpeg",
     },
     {
       name: "Prof. Vikram Malhotra",
       role: "Director of Innovation",
       desc: "Former IIT researcher, Prof. Malhotra shapes the school's high-tech robotics, AI, and coding curriculum, establishing student exchange initiatives.",
-      image: "/images/hero_robotics.png",
+      image: "/images/school_image_2.jpeg",
     },
   ];
 
@@ -39,7 +33,7 @@ export default function AboutPage() {
           <span className="badge badge-gold" style={{ marginBottom: "1rem" }}>Learn More</span>
           <h1 style={{ fontSize: "3rem", fontFamily: "var(--font-playfair)" }}>About Our School</h1>
           <p style={{ maxWidth: "600px", margin: "1rem auto 0 auto", fontSize: "1.1rem" }}>
-            A premier institution committed to academic brilliance, moral character, and innovative problem solving.
+            A premier holistic CBSE and IIT-oriented educational institution operated under the Tulasi Murari Social and Educational Society (closely affiliated with the established Visakha Defence Academy group).
           </p>
         </div>
       </section>

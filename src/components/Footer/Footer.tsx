@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { GraduationCap, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Youtube, ChevronRight } from "lucide-react";
 import styles from "./Footer.module.css";
 
@@ -12,11 +13,11 @@ export default function Footer() {
           <div className={styles.infoCol}>
             <Link href="/" className={styles.logo}>
               <div className={styles.logoIcon}>
-                <GraduationCap size={32} strokeWidth={1.5} />
+                <Image src="/images/logo.jpeg" alt="VDA Elite School Logo" width={40} height={40} style={{ borderRadius: "50%", objectFit: "cover" }} />
               </div>
               <div className={styles.logoText}>
-                <span>VDA ELITE</span>
-                <span className={styles.logoSub}>School of Excellence</span>
+                <span>VDA Elite</span>
+                <span className={styles.logoSub}>School</span>
               </div>
             </Link>
             <p className={styles.desc}>
@@ -25,11 +26,11 @@ export default function Footer() {
             <div className={styles.contactInfo}>
               <div className={styles.contactItem}>
                 <MapPin className={styles.contactIcon} size={18} />
-                <span>Ocean View Campus, Beach Road, Visakhapatnam, AP, India</span>
+                <span>D.No: 10-7-97, Main Road, opposite Babu Textiles, Kailash Nagar, New Gajuwaka, Visakhapatnam, Andhra Pradesh 530026</span>
               </div>
               <div className={styles.contactItem}>
                 <Phone className={styles.contactIcon} size={18} />
-                <span>+91 891 234 5678</span>
+                <span>+91 9848677745 / +91 9848577745</span>
               </div>
               <div className={styles.contactItem}>
                 <Mail className={styles.contactIcon} size={18} />
@@ -90,7 +91,7 @@ export default function Footer() {
             </p>
             <div className={styles.socials}>
               <a href="#facebook" className={styles.socialBtn} aria-label="Facebook"><Facebook size={18} /></a>
-              <a href="#instagram" className={styles.socialBtn} aria-label="Instagram"><Instagram size={18} /></a>
+              <a href="https://www.instagram.com/vdaeliteschool/" target="_blank" rel="noreferrer" className={styles.socialBtn} aria-label="Instagram"><Instagram size={18} /></a>
               <a href="#twitter" className={styles.socialBtn} aria-label="Twitter"><Twitter size={18} /></a>
               <a href="#youtube" className={styles.socialBtn} aria-label="Youtube"><Youtube size={18} /></a>
             </div>
