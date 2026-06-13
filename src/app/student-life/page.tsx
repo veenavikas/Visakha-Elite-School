@@ -1,10 +1,25 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ArrowRight, Sparkles, BookOpen, Music, Users, Trophy } from "lucide-react";
+import { client } from "@/sanity/lib/client";
+import { urlFor } from "@/sanity/lib/image";
 
 export default function StudentLifePage() {
   const [activeFilter, setActiveFilter] = useState("All");
+  const [sanityGallery, setSanityGallery] = useState<any[]>([]);
+
+  useEffect(() => {
+    async function fetchGallery() {
+      try {
+        const data = await client.fetch(`*[_type == "gallery"] | order(_createdAt asc)`);
+        if (data) setSanityGallery(data);
+      } catch (err) {
+        console.error("Failed to fetch gallery:", err);
+      }
+    }
+    fetchGallery();
+  }, []);
 
   const clubs = [
     {
@@ -58,7 +73,12 @@ export default function StudentLifePage() {
 
   const galleryCategories = ["All", "Campus", "STEM", "Sports", "Arts", "Academics"];
 
-  const galleryItems = [
+  const galleryItems = sanityGallery.length > 0 ? sanityGallery.map((item, index) => ({
+    id: item._id || index,
+    src: item.image ? urlFor(item.image).url() : "",
+    title: item.title,
+    category: item.category
+  })) : [
     { id: 1, src: "/images/school_image_1.jpeg", title: "Campus Exploration", category: "Campus" },
     { id: 2, src: "/images/school_image_2.jpeg", title: "Interactive Learning", category: "Academics" },
     { id: 3, src: "/images/school_image_3.jpeg", title: "Science Experiment", category: "STEM" },

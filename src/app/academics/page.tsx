@@ -1,7 +1,10 @@
 import React from "react";
 import { BookOpen, Check, ShieldAlert, Zap, Layers, Cpu } from "lucide-react";
+import { client } from "@/sanity/lib/client";
 
-export default function AcademicsPage() {
+export default async function AcademicsPage() {
+  const sanityLevels = await client.fetch(`*[_type == "curriculum"] | order(_createdAt asc)`);
+
   const levels = [
     {
       title: "Primary School (Nursery - Grade 5)",
@@ -40,6 +43,8 @@ export default function AcademicsPage() {
       ],
     },
   ];
+
+  const levelsToDisplay = sanityLevels && sanityLevels.length > 0 ? sanityLevels : levels;
 
   const facilities = [
     {
@@ -82,7 +87,7 @@ export default function AcademicsPage() {
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "3.5rem" }}>
-            {levels.map((lvl, index) => (
+            {levelsToDisplay.map((lvl: any, index: number) => (
               <div 
                 key={index} 
                 className="glass-card" 
@@ -90,14 +95,14 @@ export default function AcademicsPage() {
               >
                 <div className="grid-2" style={{ gap: "3rem", alignItems: "center" }}>
                   <div>
-                    <span className={`badge badge-${lvl.badgeType}`} style={{ marginBottom: "1rem" }}>{lvl.badge}</span>
+                    <span className={`badge badge-${lvl.badgeType || 'gold'}`} style={{ marginBottom: "1rem" }}>{lvl.badge}</span>
                     <h3 style={{ fontFamily: "var(--font-playfair)", fontSize: "2rem", marginBottom: "1.5rem" }}>{lvl.title}</h3>
                     <p style={{ marginBottom: "1.5rem", fontSize: "1.05rem" }}>{lvl.desc}</p>
                   </div>
                   
                   <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
                     <h4 style={{ color: "var(--color-primary)", fontWeight: 700, marginBottom: "0.5rem" }}>Key Features:</h4>
-                    {lvl.features.map((feat, i) => (
+                    {(lvl.features || []).map((feat: string, i: number) => (
                       <div key={i} style={{ display: "flex", alignItems: "center", gap: "0.75rem", fontSize: "0.95rem" }}>
                         <div style={{ color: "var(--accent-mint)" }}><Check size={18} /></div>
                         <span>{feat}</span>

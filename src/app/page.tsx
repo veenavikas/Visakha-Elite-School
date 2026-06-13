@@ -16,9 +16,13 @@ import {
   Compass, 
   Calendar 
 } from "lucide-react";
+import { client } from "@/sanity/lib/client";
+import { urlFor } from "@/sanity/lib/image";
 
-export default function HomePage() {
-  const heroSlides = [
+export default async function HomePage() {
+  const sanityHero = await client.fetch(`*[_type == "hero"] | order(_createdAt asc)`);
+
+  const defaultHeroSlides = [
     {
       video: "/images/hero_video.mp4",
       badgeText: "Admissions 2026-27 Open",
@@ -53,6 +57,19 @@ export default function HomePage() {
       secondaryCtaLink: "/contact",
     },
   ];
+
+  const heroSlides = sanityHero && sanityHero.length > 0 ? sanityHero.map((slide: any) => ({
+    video: slide.mediaType === 'video' ? slide.videoUrl : undefined,
+    image: slide.mediaType === 'image' && slide.image ? urlFor(slide.image).url() : undefined,
+    badgeText: slide.badgeText,
+    badgeType: slide.badgeType || "coral",
+    title: slide.title,
+    description: slide.description,
+    primaryCtaText: slide.primaryCtaText,
+    primaryCtaLink: slide.primaryCtaLink,
+    secondaryCtaText: slide.secondaryCtaText,
+    secondaryCtaLink: slide.secondaryCtaLink,
+  })) : defaultHeroSlides;
 
   return (
     <>
