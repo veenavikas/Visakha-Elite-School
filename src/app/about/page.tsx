@@ -2,18 +2,18 @@ import React from "react";
 import { Award, Compass, Eye, Shield, Users } from "lucide-react";
 
 export default function AboutPage() {
-  const leaders = [
+  const founders = [
     {
-      name: "D.S.S. Krishna Kumar (M.Sc)",
+      name: "B.Srinivasa Rao (M.Sc., & B.Ed.)",
       role: "Founder & Managing Director",
-      desc: "Establishing Visakha Defence Academy in 2002, D.S.S. Krishna Kumar envisioned VDA Elite School as a premier extension of academic excellence, focusing on discipline and holistic growth.",
       image: "/images/school_image_1.jpeg",
+      message: "Welcome to VisakhaDefence Academy (VDA), a leading institution committed to education. Our mission is to provide quality education. And transform students into responsible Professionals. We offer a vibrant environment where Students are encouraged to participate in both curricular and extracurricular activities. The main objective is to provide Defence coaching at Intermediate or Degree level and enable students to get jobs.I feel proud that thousands of our students have got selected in Defence / State/Central government jobs. If your ambition is to join the Armed forces, then VDA is the right place for you It has the best infrastructure, top class faculty, good study material and physical training. Wehave the highest job selections in Andhra and Telangana. Let us march forward together with hope and determination.",
     },
     {
-      name: "Prof. Vikram Malhotra",
-      role: "Director of Innovation",
-      desc: "Former IIT researcher, Prof. Malhotra shapes the school's high-tech robotics, AI, and coding curriculum, establishing student exchange initiatives.",
+      name: "D.S.S.Krishna Kumar(M.Sc)",
+      role: "Founder & Managing Director",
       image: "/images/school_image_2.jpeg",
+      message: "I am honored to welcome you to VDA,VisakhaDefence Academy was established in 2002 in New Gajuwaka to cater the educational needs of the students in the surrounding areas. It started with a unique motto to provide defencecoaching to students aspiring for a defence career.Defence aspirants should take decision at the School level itself.Our mission is to make quality education accessible to the new generation. There is nothing more important to a parent than his child. The future of the child is securedin the hands of VDA. Since its inception we have enabled thousands of our students to get jobs. The students of our college are making us proud by their selections. They are bringing glory to themselves, their families and above all to the Nation. Our request to aspiring students is to take the right decision at the right time and make their future bright.",
     },
   ];
 
@@ -106,26 +106,58 @@ export default function AboutPage() {
       <section className="section section-light">
         <div className="container">
           <div style={{ textAlign: "center", maxWidth: "600px", margin: "0 auto 4rem auto" }}>
-            <span className="badge badge-gold" style={{ marginBottom: "1rem" }}>Academic Leaders</span>
-            <h2 style={{ fontSize: "2.5rem", fontFamily: "var(--font-playfair)", marginBottom: "1rem" }}>Our Leadership Team</h2>
-            <p>Meet the visionary minds driving the academic and strategic growth of VDA Elite.</p>
+            <span className="badge badge-gold" style={{ marginBottom: "1rem" }}>Founders</span>
+            <h2 style={{ fontSize: "2.5rem", fontFamily: "var(--font-playfair)", marginBottom: "1rem" }}>Our Leadership</h2>
+            <p>Meet the visionary minds driving the academic and strategic growth of Visakha Defence Academy.</p>
           </div>
 
-          <div className="grid-3">
-            {leaders.map((leader, i) => (
-              <div key={i} className="glass-card" style={{ padding: "0", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%" }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img 
-                  src={leader.image} 
-                  alt={leader.name} 
-                  style={{ width: "100%", height: "250px", objectFit: "cover" }} 
-                />
-                <div style={{ padding: "2rem", display: "flex", flexDirection: "column", flex: 1 }}>
-                  <h3 style={{ fontSize: "1.3rem", marginBottom: "0.25rem" }}>{leader.name}</h3>
-                  <span style={{ fontSize: "0.85rem", color: "var(--color-secondary)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", marginBottom: "1rem" }}>
-                    {leader.role}
-                  </span>
-                  <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", lineHeight: 1.6 }}>{leader.desc}</p>
+          <div className="grid-2">
+            {founders.map((founder, i) => (
+              <div key={i} className="glass-card" style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+                {/* Top Header */}
+                <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img 
+                    src={founder.image} 
+                    alt={founder.name} 
+                    style={{ width: "120px", height: "120px", borderRadius: "12px", border: "3px solid var(--accent-blue)", objectFit: "cover" }} 
+                  />
+                  <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+                    <h3 style={{ fontSize: "1.4rem", color: "var(--color-primary)", marginBottom: 0 }}>{founder.name}</h3>
+                    <p style={{ color: "var(--accent-blue)", fontWeight: 700, fontSize: "1rem", margin: 0 }}>{founder.role}</p>
+                    <div style={{ 
+                      display: "inline-block", 
+                      backgroundColor: "rgba(69, 123, 157, 0.1)", 
+                      color: "var(--accent-blue)", 
+                      padding: "0.4rem 1rem", 
+                      borderRadius: "30px", 
+                      fontSize: "0.85rem", 
+                      fontWeight: "bold", 
+                      width: "fit-content", 
+                      marginTop: "0.5rem" 
+                    }}>
+                      30+ Years of Service
+                    </div>
+                  </div>
+                </div>
+
+                {/* Message Section */}
+                <div style={{ borderLeft: "4px solid var(--color-primary)", paddingLeft: "1.2rem", marginTop: "0.5rem" }}>
+                  <h4 style={{ fontSize: "1.2rem", color: "var(--color-primary)", marginBottom: "1rem" }}>Message from Founder & Managing Director</h4>
+                  <p style={{ fontSize: "0.95rem", color: "var(--text-muted)", lineHeight: 1.8, position: "relative" }}>
+                    {founder.message}
+                    <span style={{ 
+                      position: "absolute", 
+                      bottom: "-20px", 
+                      right: "10px", 
+                      fontSize: "5rem", 
+                      color: "rgba(10,37,64,0.05)", 
+                      fontFamily: "var(--font-playfair)", 
+                      lineHeight: 1 
+                    }}>
+                      &rdquo;
+                    </span>
+                  </p>
                 </div>
               </div>
             ))}
