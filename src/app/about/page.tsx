@@ -6,13 +6,13 @@ export default function AboutPage() {
     {
       name: "B.Srinivasa Rao (M.Sc., & B.Ed.)",
       role: "Founder & Managing Director",
-      image: "/images/school_image_1.jpeg",
+      image: "/images/srinivarao.jpg",
       message: "Welcome to VisakhaDefence Academy (VDA), a leading institution committed to education. Our mission is to provide quality education. And transform students into responsible Professionals. We offer a vibrant environment where Students are encouraged to participate in both curricular and extracurricular activities. The main objective is to provide Defence coaching at Intermediate or Degree level and enable students to get jobs.I feel proud that thousands of our students have got selected in Defence / State/Central government jobs. If your ambition is to join the Armed forces, then VDA is the right place for you It has the best infrastructure, top class faculty, good study material and physical training. Wehave the highest job selections in Andhra and Telangana. Let us march forward together with hope and determination.",
     },
     {
       name: "D.S.S.Krishna Kumar(M.Sc)",
       role: "Founder & Managing Director",
-      image: "/images/school_image_2.jpeg",
+      image: "/images/Krishna Kumar.jpg",
       message: "I am honored to welcome you to VDA,VisakhaDefence Academy was established in 2002 in New Gajuwaka to cater the educational needs of the students in the surrounding areas. It started with a unique motto to provide defencecoaching to students aspiring for a defence career.Defence aspirants should take decision at the School level itself.Our mission is to make quality education accessible to the new generation. There is nothing more important to a parent than his child. The future of the child is securedin the hands of VDA. Since its inception we have enabled thousands of our students to get jobs. The students of our college are making us proud by their selections. They are bringing glory to themselves, their families and above all to the Nation. Our request to aspiring students is to take the right decision at the right time and make their future bright.",
     },
   ];
